@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Astha Desai — Cloud Engineer, Cybersecurity Enthusiast & AI Integrator. AWS Certified. Portfolio.">
+    <title>Astha Desai — Cloud Engineer &amp; AI Integrator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="bg-orbs" aria-hidden="true">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+    </div>
+
+    <canvas id="three-bg" aria-hidden="true"></canvas>
+
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#hero" class="logo">AD<span>.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certificates">Awards</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Open menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <p class="hero-eyebrow"><span class="pulse-dot"></span> Available for opportunities</p>
+                <h1 class="hero-name">ASTHA DESAI</h1>
+                <h2 class="hero-role">I'm a <span class="typed" id="typed"></span><span class="cursor">|</span></h2>
+                <p class="hero-desc">
+                    High-performing Cloud Engineer, technical speaker, and disciplined NCC Sergeant
+                    specializing in secure AWS ecosystem management — blending structural leadership
+                    with deep technical acumen in cloud, cybersecurity, and AI.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View My Work</a>
+                    <a href="SMC_Resume.pdf" class="btn btn-ghost" download><i class="fas fa-file-arrow-down"></i> Download Resume</a>
+                    <a href="#contact" class="btn btn-ghost"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://linkedin.com/in/astha-desai-b61381323" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/asthadesai24" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:asthadesai23245@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+919773154800" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <canvas id="hero-3d" aria-hidden="true"></canvas>
+                <div class="avatar-ring">
+                    <div class="avatar"><img src="smc.jpg" alt="Astha Desai"></div>
+                    <span class="badge badge-aws"><i class="fab fa-aws"></i></span>
+                    <span class="badge badge-shield"><i class="fas fa-shield-halved"></i></span>
+                    <span class="badge badge-ai"><i class="fas fa-brain"></i></span>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-hint" aria-label="Scroll down"><i class="fas fa-chevron-down"></i></a>
+    </header>
+
+    <main>
+        <section class="stats-band">
+            <div class="container stats-grid">
+                <div class="stat reveal">
+                    <span class="stat-num" data-target="4">0</span><span class="stat-plus">+</span>
+                    <p>AWS Certifications</p>
+                </div>
+                <div class="stat reveal">
+                    <span class="stat-num" data-target="7">0</span><span class="stat-plus">+</span>
+                    <p>Awards &amp; Achievements</p>
+                </div>
+                <div class="stat reveal">
+                    <span class="stat-num" data-target="2">0</span><span class="stat-plus">+</span>
+                    <p>Flagship Projects</p>
+                </div>
+                <div class="stat reveal">
+                    <span class="stat-num" data-target="7.9" data-decimal="1">0</span>
+                    <p>CGPA</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">01 — Introduction</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p>
+                            I'm an Information Technology student and aspiring <strong>Cloud Engineer</strong>
+                            focused on building secure, scalable, and resilient next-generation solutions.
+                            My work sits at the intersection of <strong>cloud architecture, cybersecurity,
+                            and AI integration</strong> on the AWS ecosystem.
+                        </p>
+                        <p>
+                            As a disciplined <strong>NCC Sergeant</strong> and Discipline Secretary, I bring
+                            structured leadership to every team I join — driving operational excellence,
+                            coordinating events, and mentoring peers while shipping technical projects.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-card">
+                                <i class="fab fa-aws"></i>
+                                <h4>Cloud Native</h4>
+                                <p>EC2, S3, Aurora &amp; secure AWS deployments</p>
+                            </div>
+                            <div class="highlight-card">
+                                <i class="fas fa-shield-halved"></i>
+                                <h4>Security First</h4>
+                                <p>Cybersecurity mindset baked into every build</p>
+                            </div>
+                            <div class="highlight-card">
+                                <i class="fas fa-users-gear"></i>
+                                <h4>Leadership</h4>
+                                <p>NCC Sergeant &amp; Discipline Secretary</p>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="about-card reveal">
+                        <h3>Quick Facts</h3>
+                        <ul class="facts-list">
+                            <li><i class="fas fa-graduation-cap"></i> <span>B.E. Information Technology</span></li>
+                            <li><i class="fas fa-location-dot"></i> <span>Vadodara, Gujarat</span></li>
+                            <li><i class="fas fa-certificate"></i> <span>AWS Certified Cloud Practitioner</span></li>
+                            <li><i class="fas fa-microphone"></i> <span>Technical Speaker</span></li>
+                            <li><i class="fas fa-medal"></i> <span>Rank 3 — Mock Placement Drive</span></li>
+                        </ul>
+                        <a href="SMC_Resume.pdf" class="btn btn-primary btn-block" download><i class="fas fa-download"></i> Download Resume</a>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">02 — Expertise</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                </div>
+                <div class="skills-layout">
+                    <div class="skill-block reveal">
+                        <h3><i class="fas fa-cloud"></i> Cloud &amp; DevOps</h3>
+                        <div class="bar" data-level="90"><span>AWS (EC2, S3, Aurora)</span><div class="bar-track"><div class="bar-fill"></div></div></div>
+                        <div class="bar" data-level="80"><span>Docker &amp; Containers</span><div class="bar-track"><div class="bar-fill"></div></div></div>
+                        <div class="bar" data-level="75"><span>CI/CD (GitHub Actions)</span><div class="bar-track"><div class="bar-fill"></div></div></div>
+                    </div>
+                    <div class="skill-block reveal">
+                        <h3><i class="fas fa-code"></i> Programming</h3>
+                        <div class="bar" data-level="85"><span>Python</span><div class="bar-track"><div class="bar-fill"></div></div></div>
+                        <div class="bar" data-level="80"><span>JavaScript / Node.js</span><div class="bar-track"><div class="bar-fill"></div></div></div>
+                        <div class="bar" data-level="75"><span>C</span><div class="bar-track"><div class="bar-fill"></div></div></div>
+                        <div class="bar" data-level="70"><span>PHP</span><div class="bar-track"><div class="bar-fill"></div></div></div>
+                    </div>
+                    <div class="skill-block reveal">
+                        <h3><i class="fas fa-database"></i> Data &amp; More</h3>
+                        <div class="bar" data-level="80"><span>MongoDB</span><div class="bar-track"><div class="bar-fill"></div></div></div>
+                        <div class="bar" data-level="78"><span>AWS Databases</span><div class="bar-track"><div class="bar-fill"></div></div></div>
+                        <div class="bar" data-level="85"><span>Cybersecurity</span><div class="bar-track"><div class="bar-fill"></div></div></div>
+                    </div>
+                </div>
+                <div class="tech-cloud reveal">
+                    <span><i class="fab fa-aws"></i> AWS</span>
+                    <span><i class="fab fa-python"></i> Python</span>
+                    <span><i class="fab fa-js"></i> JavaScript</span>
+                    <span><i class="fab fa-node-js"></i> Node.js</span>
+                    <span><i class="fab fa-php"></i> PHP</span>
+                    <span><i class="fas fa-code"></i> C</span>
+                    <span><i class="fab fa-docker"></i> Docker</span>
+                    <span><i class="fas fa-database"></i> MongoDB</span>
+                    <span><i class="fab fa-github"></i> GitHub Actions</span>
+                    <span><i class="fas fa-shield-halved"></i> Cybersecurity</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">03 — Journey</span>
+                    <h2 class="section-title">Work Experience</h2>
+                </div>
+                <div class="timeline">
+                    <div class="tl-item reveal">
+                        <div class="tl-dot"></div>
+                        <div class="tl-card">
+                            <span class="tl-date">2023 – Present</span>
+                            <h3>Private Tutor</h3>
+                            <p class="tl-org"><i class="fas fa-building"></i> Edushine Hub, Vadodara</p>
+                            <ul>
+                                <li>Taught personalized, one-on-one sessions using tailored lesson plans.</li>
+                                <li>Monitored academic progress and provided regular updates to parents.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tl-item reveal">
+                        <div class="tl-dot"></div>
+                        <div class="tl-card">
+                            <span class="tl-date">Jan 2026</span>
+                            <h3>Team Leader</h3>
+                            <p class="tl-org"><i class="fas fa-building"></i> Intuitive Hackathon, DA-IICT</p>
+                            <ul>
+                                <li>Deployed scalable applications and managed cloud storage using Amazon EC2 and Amazon S3.</li>
+                                <li>Configured and optimized high-performance, scalable databases using Amazon Aurora.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tl-item reveal">
+                        <div class="tl-dot"></div>
+                        <div class="tl-card">
+                            <span class="tl-date">2025 – 2026</span>
+                            <h3>Discipline Secretary</h3>
+                            <p class="tl-org"><i class="fas fa-building"></i> Student Central Committee, SVIT</p>
+                            <ul>
+                                <li>Managed campus discipline and logistical coordination for college events.</li>
+                                <li>Liaised between faculty and students to ensure a structured environment.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section section-alt">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">04 — Featured</span>
+                    <h2 class="section-title">Projects</h2>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card reveal">
+                        <div class="project-top">
+                            <div class="project-icon"><i class="fas fa-heart-pulse"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/asthadesai24" target="_blank" rel="noopener" aria-label="Repository"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>HeartGuard</h3>
+                        <p>A containerized ML-powered web application for real-time heart failure risk prediction. Built with Flask and deployed using Docker, leveraging CI/CD with GitHub Actions for automated testing and deployment.</p>
+                        <div class="tags">
+                            <span>Flask</span><span>Docker</span><span>ML</span><span>GitHub Actions</span><span>CI/CD</span>
+                        </div>
+                    </article>
+                    <article class="project-card reveal">
+                        <div class="project-top">
+                            <div class="project-icon"><i class="fas fa-robot"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/asthadesai24" target="_blank" rel="noopener" aria-label="Repository"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Agent 2</h3>
+                        <p>A self-hosted autonomous AI agent with multi-model integration, Burp MCP, real terminal access, persistent memory, and an integrated workspace. Acts as Software Engineer, Tester, QA Engineer, and Debugger to automate development and security workflows.</p>
+                        <div class="tags">
+                            <span>AI Agent</span><span>Burp MCP</span><span>Automation</span><span>Security</span><span>Containers</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">05 — Academics</span>
+                    <h2 class="section-title">Education</h2>
+                </div>
+                <div class="edu-card reveal">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="edu-body">
+                        <span class="tl-date">2023 – Present</span>
+                        <h3>B.E. Information Technology</h3>
+                        <p class="tl-org">SVIT Vasad</p>
+                        <p class="edu-cgpa"><i class="fas fa-star"></i> CGPA: <strong>7.9</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates" class="section section-alt">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">06 — Recognition</span>
+                    <h2 class="section-title">Certificates &amp; Achievements</h2>
+                </div>
+                <div class="cert-grid">
+                    <div class="cert-item reveal"><i class="fab fa-aws"></i><div><h4>AWS Cloud Quest Certification</h4><span>Amazon Web Services</span></div></div>
+                    <div class="cert-item reveal"><i class="fab fa-aws"></i><div><h4>AWS Certified Cloud Practitioner (CCP)</h4><span>Amazon Web Services</span></div></div>
+                    <div class="cert-item reveal"><i class="fab fa-aws"></i><div><h4>AWS Event Coordinator Certification</h4><span>Amazon Web Services</span></div></div>
+                    <div class="cert-item reveal"><i class="fas fa-leaf"></i><div><h4>Green AI Completion Certificate</h4><span>Edunet</span></div></div>
+                    <div class="cert-item reveal"><i class="fas fa-server"></i><div><h4>AWS Account Navigation &amp; Instances</h4><span>GUVI</span></div></div>
+                    <div class="cert-item reveal"><i class="fas fa-user-tie"></i><div><h4>Student Central Committee Officer</h4><span>College Administration</span></div></div>
+                    <div class="cert-item reveal"><i class="fas fa-trophy"></i><div><h4>Rank 3 — Mock Placement Drive</h4><span>College Administration</span></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">07 — Say Hello</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                </div>
+                <div class="contact-wrap reveal">
+                    <p class="contact-lead">Have an opportunity, project, or just want to connect? My inbox is always open.</p>
+                    <div class="contact-cards">
+                        <a href="mailto:asthadesai23245@gmail.com" class="contact-card">
+                            <i class="fas fa-envelope"></i>
+                            <h4>Email</h4>
+                            <span>asthadesai23245@gmail.com</span>
+                        </a>
+                        <a href="tel:+919773154800" class="contact-card">
+                            <i class="fas fa-phone"></i>
+                            <h4>Phone</h4>
+                            <span>+91 97731 54800</span>
+                        </a>
+                        <a href="https://linkedin.com/in/astha-desai-b61381323" target="_blank" rel="noopener" class="contact-card">
+                            <i class="fab fa-linkedin-in"></i>
+                            <h4>LinkedIn</h4>
+                            <span>astha-desai</span>
+                        </a>
+                        <a href="https://github.com/asthadesai24" target="_blank" rel="noopener" class="contact-card">
+                            <i class="fab fa-github"></i>
+                            <h4>GitHub</h4>
+                            <span>asthadesai24</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="#hero" class="logo">AD<span>.</span></a>
+            <p>&copy; <span id="year"></span> Astha Desai. Crafted with passion.</p>
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/astha-desai-b61381323" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/asthadesai24" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:asthadesai23245@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
